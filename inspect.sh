@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker inspect newrelic-mysql-plugin 
+docker inspect newrelic-pivotal-plugin 

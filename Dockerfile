@@ -1,12 +1,12 @@
-# Pre-built JDK 8 image
-FROM kurron/docker-oracle-jdk-8:latest
+FROM ruby:2.2
 
 MAINTAINER Ron Kurr <kurr@jvmguy.com>
 
-COPY newrelic_mysql_plugin-2.0.0 /opt/example
+COPY newrelic_pivotal_agent-pivotal_agent-1.0.5 /opt/example
 
 WORKDIR /opt/example
 
-ENTRYPOINT ["java", "-Xmx128m", "-jar", "plugin.jar"]
-#ENTRYPOINT ["bash"]
+RUN ["bundle","install"]
+
+ENTRYPOINT ["./pivotal_agent"]
 

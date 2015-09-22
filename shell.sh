@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker exec -it newrelic-mysql-plugin bash
+docker exec -it newrelic-pivotal-plugin bash
