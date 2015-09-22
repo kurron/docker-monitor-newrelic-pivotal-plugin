@@ -1,0 +1,11 @@
+{
+  "agents": [
+    {
+      "name"    : "Monitoring Simulation",
+      "host"    : "localhost",
+      "metrics" : "status,newrelic",
+      "user"    : "root",
+      "passwd"  : "sa"
+    }
+  ]
+}
