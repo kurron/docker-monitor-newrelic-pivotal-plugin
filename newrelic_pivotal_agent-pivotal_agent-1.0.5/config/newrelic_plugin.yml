@@ -12,7 +12,7 @@ newrelic:
   #
   # Update with your New Relic account license key:
   #
-  license_key: 'YOUR_LICENSE_KEY_HERE'
+  license_key: '9a3465dc990aa65ee1037041a7d0f770ef428cfd'
   #
   # Set to '1' for verbose output, remove for normal output.
   # All output goes to stdout/stderr.
@@ -32,7 +32,7 @@ agents:
     # Note: When monitoring multiple nodes you should use the real hostnames instead of localhost
     # Uncomment the appropriate line for your version
     # RabbitMQ Default URL version 3.0
-    #management_api_url: http://guest:guest@localhost:15672
+    management_api_url: http://guest:guest@localhost:15672
     # RabbitMQ Default URL versions prior to 3.0
     #management_api_url: http://guest:guest@localhost:55672
     #
@@ -61,8 +61,8 @@ agents:
   redis:
     # The - allows you to define multiple servers
     #-
-      #hostname: localhost
-      #hostport: 6379
+      hostname: localhost
+      hostport: 6379
       # Set "debug: true" to see metrics in stdout instead of sent to New Relic"
       #debug: false
       # Set "testrun: true" to use input from local text/html files. Only parses input once, then quits.
